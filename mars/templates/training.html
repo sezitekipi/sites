@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    {% if number % 2 == 0 %}
+    <h2>Научные симуляторы</h2>
+
+    {% else %}
+    <h2>Инжинерные тренажеры</h2>
+    {% endif %}
+</div>
+<img src="{{ url_img }}"
+     alt="здесь должна была быть картинка, но не нашлась">
+{% endblock %}
